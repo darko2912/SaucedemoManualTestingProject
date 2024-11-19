@@ -10,7 +10,7 @@ This project involves manual testing of the **SauceDemo** website, a platform de
 
 ## Tools Used
 - Microsoft Excel for creating and organizing test cases, TestRail was used concurrently for writing Test Cases.
-- Microsoft Docs for documenting bug reports, JIRA was used concurrently for writing Bug reports.
+- Microsoft Excel for documenting bug reports, JIRA was used concurrently for writing Bug reports.
 - SauceDemo web application as the test environment
 
 ## Key Features Tested
