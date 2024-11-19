@@ -57,12 +57,19 @@ Test cases will be executed manually, and any issues found will be reported in t
 - Potential server issues may impact the testing timeline.
 - Test environment might be inaccessible due to network issues.
 
-## Test Cases Summary
-- **Test Case 1**: Login with valid credentials
-- **Test Case 2**: 
+# Test Cases Overview
 
-## Test Results
----
+The project consists of **41 test cases** in total. Of these:
 
-### Notes
+- **29 test cases** were successfully executed and passed.
+- **12 test cases** were executed and failed.
+
+### Summary:
+- **Passed**: 29/41
+- **Failed**: 12/41
+
+### Notes:
+- All failed test cases have been reported in the bug tracking system.
+- Retesting will be conducted once the reported issues are resolved.
+
 This plan will be updated as needed throughout the testing cycle.
