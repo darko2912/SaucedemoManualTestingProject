@@ -4,7 +4,7 @@ Precondition,"The user already logged in,  added an item to the cart, and is loc
 Steps,Input,Expected result
 "1. Click on ""Checkout"" button",,The user is successfully redirected on checkout step one page
 "2. Input valid first name in ""First name"" field",Marko,Placeholder is successfully moved and entered value is visible
-"3. Input valid last name in ""Last name"" field",Markovi?,Placeholder is successfully moved and entered value is visible
+"3. Input valid last name in ""Last name"" field",Markovic,Placeholder is successfully moved and entered value is visible
 "4. Input valid Zip code in ""Zip/Postal code"" field",55000,Placeholder is successfully moved and entered value is visible
 "5. Click on ""Countinue"" button",,The user is successfully redirected on checkout step two page
 "6. Click on ""Finish"" button",,The user is successfully ordered items
@@ -16,7 +16,7 @@ Precondition,"The user already logged in,  added an item to the cart, and is loc
 Steps,Input,Expected result
 "1. Click on ""Checkout"" button",,User is successfully redirected on checkout page
 "2. Leave ""First name"" field empty",,Placeholder is visible
-"3. Input valid last name in ""Last name"" field",Markovi?,Placeholder is successfully moved and entered value is visible
+"3. Input valid last name in ""Last name"" field",Markovic,Placeholder is successfully moved and entered value is visible
 "4. Input valid Zip code in ""Zip/Postal code"" field",55000,Placeholder is successfully moved and entered value is visible
 "5. Click on ""Countinue"" button",,"The user cannot continue order and error message appears ""First Name is required"""
 ,,
@@ -36,7 +36,7 @@ Precondition,"The user already logged in,  added an item to the cart, and is loc
 Steps,Input,Expected result
 "1. Click on ""Checkout"" button",,The user is successfully redirected on checkout page
 "2. Input valid first name in ""First name"" field",Marko,Placeholder is successfully moved and entered value is visible
-"3. Input valid last name in ""Last name"" field",Markovi?,Placeholder is successfully moved and entered value is visible
+"3. Input valid last name in ""Last name"" field",Markovic,Placeholder is successfully moved and entered value is visible
 "4. Leave ""Zip/Postal code"" field empty",,Placeholder is visible
 "5. Click on ""Countinue"" button",,"The user cannot continue order and error message appears ""Postal Code is required"""
 ,,
@@ -46,7 +46,7 @@ Precondition,"The user already logged in,  added an item to the cart, and is loc
 Steps,Input,Expected result
 "1. Click on ""Checkout"" button",,The user is successfully redirected on checkout page
 "2. Input invalid first name in ""First name"" field",123#mar,Placeholder is successfully moved and entered value is visible
-"3. Input valid last name in ""Last name"" field",Markovi?,Placeholder is successfully moved and entered value is visible
+"3. Input valid last name in ""Last name"" field",Markovic,Placeholder is successfully moved and entered value is visible
 "4. Input valid Zip code in ""Zip/Postal code"" field",55000,Placeholder is successfully moved and entered value is visible
 "5. Click on ""Countinue"" button",,"The user cannot continue order and error message appears ""Incorrect first name format. Only letters can be used for the first name."""
 ,,
@@ -66,8 +66,8 @@ Precondition,"The user already logged in,  added an item to the cart, and is loc
 Steps,Input,Expected result
 "1. Click on ""Checkout"" button",,The user is successfully redirected on checkout page
 "2. Input valid first name in ""First name"" field",Marko,Placeholder is successfully moved and entered value is visible
-"3. Input valid last name in ""Last name"" field",Markovi?,Placeholder is successfully moved and entered value is visible
-"4. Input invalid zip code in ""Zip/Postal code"" field",abvgd,Placeholder is successfully moved and entered value is visible
+"3. Input valid last name in ""Last name"" field",Markovic,Placeholder is successfully moved and entered value is visible
+"4. Input invalid zip code in ""Zip/Postal code"" field",#!fad",Placeholder is successfully moved and entered value is visible
 "5. Click on ""Countinue"" button",,"The user cannot continue order and error message appears ""Incorrect zip code format. Only nubers can be used for the zip code."""
 ,,
 ID,TC_39,
@@ -76,7 +76,7 @@ Precondition,"The user already logged in,  added an item to the cart, and is loc
 Steps,Input,Expected result
 "1. Click on ""Checkout"" button",,The user is successfully redirected on checkout page
 "2. Input valid first name in ""First name"" field",Marko,Placeholder is successfully moved and entered value is visible
-"3. Input valid last name in ""Last name"" field",Markovi?,Placeholder is successfully moved and entered value is visible
+"3. Input valid last name in ""Last name"" field",Markovic,Placeholder is successfully moved and entered value is visible
 "4. Input valid Zip code in ""Zip/Postal code"" field",55000,Placeholder is successfully moved and entered value is visible
 "5. Click on ""Countinue"" button",,User is successfully redirected on checkout step two page
 "6. Click on ""Cancel"" button",,The user successfully canceled the order and was redirected to the products page. The product that he wanted to order is in the cart.
@@ -87,7 +87,7 @@ Precondition,"The ""problem user"" already logged in,  added an item to the cart
 Steps,Input,Expected result
 "1. Click on ""Checkout"" button",,The user is successfully redirected on checkout step one page
 "2. Input valid first name in ""First name"" field",Marko,Placeholder is successfully moved and entered value is visible
-"3. Input valid last name in ""Last name"" field",Markovi?,Placeholder is successfully moved and entered value is visible
+"3. Input valid last name in ""Last name"" field",Markovic,Placeholder is successfully moved and entered value is visible
 "4. Input valid Zip code in ""Zip/Postal code"" field",55000,Placeholder is successfully moved and entered value is visible
 "5. Click on ""Countinue"" button",,The user is successfully redirected on checkout step two page
 "6. Click on ""Finish"" button",,The user is successfully ordered items
@@ -99,6 +99,6 @@ Precondition,"The user already logged in,  added an item to the cart, and is loc
 Steps,Input,Expected result
 "1. Click on ""Checkout"" button",,The user is successfully redirected on checkout step one page
 "2. Input valid first name in ""First name"" field",Marko,Placeholder is successfully moved and entered value is visible
-"3. Input valid last name in ""Last name"" field",Markovi?,Placeholder is successfully moved and entered value is visible
+"3. Input valid last name in ""Last name"" field",Markovic,Placeholder is successfully moved and entered value is visible
 "4. Input valid Zip code in ""Zip/Postal code"" field",55000,Placeholder is successfully moved and entered value is visible
 "5. Click on ""Countinue"" button",,"The user is successfully redirected on checkout step two page,  the total price is correct and corresponds to the ordered products."
