@@ -1,0 +1,104 @@
+ID,TC_32,
+Test case name,Verify that the user can order items,
+Precondition,"The user already logged in,  added an item to the cart, and is located on the cart page.",
+Steps,Input,Expected result
+"1. Click on ""Checkout"" button",,The user is successfully redirected on checkout step one page
+"2. Input valid first name in ""First name"" field",Marko,Placeholder is successfully moved and entered value is visible
+"3. Input valid last name in ""Last name"" field",Markovi?,Placeholder is successfully moved and entered value is visible
+"4. Input valid Zip code in ""Zip/Postal code"" field",55000,Placeholder is successfully moved and entered value is visible
+"5. Click on ""Countinue"" button",,The user is successfully redirected on checkout step two page
+"6. Click on ""Finish"" button",,The user is successfully ordered items
+"7. Click on ""Back home"" button",,The user redirected on products page
+,,
+ID,TC_33,
+Test case name,Verify that the user cannot order items with an empty first name field on the checkout page,
+Precondition,"The user already logged in,  added an item to the cart, and is located on the cart page.",
+Steps,Input,Expected result
+"1. Click on ""Checkout"" button",,User is successfully redirected on checkout page
+"2. Leave ""First name"" field empty",,Placeholder is visible
+"3. Input valid last name in ""Last name"" field",Markovi?,Placeholder is successfully moved and entered value is visible
+"4. Input valid Zip code in ""Zip/Postal code"" field",55000,Placeholder is successfully moved and entered value is visible
+"5. Click on ""Countinue"" button",,"The user cannot continue order and error message appears ""First Name is required"""
+,,
+ID,TC_34,
+Test case name,Verify that the user cannot order items with empty last name field on the checkout page,
+Precondition,"The user already logged in,  added an item to the cart, and is located on the cart page.",
+Steps,Input,Expected result
+"1. Click on ""Checkout"" button",,The user is successfully redirected on checkout page
+"2. Input valid first name in ""First name"" field",Marko,Placeholder is successfully moved and entered value is visible
+"3. Leave ""Last name"" field empty",,Placeholder is visible
+"4. Input valid Zip code in ""Zip/Postal code"" field",55000,Placeholder is successfully moved and entered value is visible
+"5. Click on ""Countinue"" button",,"The user cannot continue order and error message appears ""Last Name is required"""
+,,
+ID,TC_35,
+Test case name,Verify that the user cannot order items with empty Zip/Postal code field on the checkout page,
+Precondition,"The user already logged in,  added an item to the cart, and is located on the cart page.",
+Steps,Input,Expected result
+"1. Click on ""Checkout"" button",,The user is successfully redirected on checkout page
+"2. Input valid first name in ""First name"" field",Marko,Placeholder is successfully moved and entered value is visible
+"3. Input valid last name in ""Last name"" field",Markovi?,Placeholder is successfully moved and entered value is visible
+"4. Leave ""Zip/Postal code"" field empty",,Placeholder is visible
+"5. Click on ""Countinue"" button",,"The user cannot continue order and error message appears ""Postal Code is required"""
+,,
+ID,TC_36,
+Test case name,Verify that the user cannot order items with an invalid first name on the checkout page,
+Precondition,"The user already logged in,  added an item to the cart, and is located on the cart page.",
+Steps,Input,Expected result
+"1. Click on ""Checkout"" button",,The user is successfully redirected on checkout page
+"2. Input invalid first name in ""First name"" field",123#mar,Placeholder is successfully moved and entered value is visible
+"3. Input valid last name in ""Last name"" field",Markovi?,Placeholder is successfully moved and entered value is visible
+"4. Input valid Zip code in ""Zip/Postal code"" field",55000,Placeholder is successfully moved and entered value is visible
+"5. Click on ""Countinue"" button",,"The user cannot continue order and error message appears ""Incorrect first name format. Only letters can be used for the first name."""
+,,
+ID,TC_37,
+Test case name,Verify that the user cannot order items with an invalid last name on the checkout page,
+Precondition,"The user already logged in,  added an item to the cart, and is located on the cart page.",
+Steps,Input,Expected result
+"1. Click on ""Checkout"" button",,The user is successfully redirected on checkout page
+"2. Input valid first name in ""First name"" field",Marko,Placeholder is successfully moved and entered value is visible
+"3. Input invalid last name in ""Last name"" field",123#Mar,Placeholder is successfully moved and entered value is visible
+"4. Input valid Zip code in ""Zip/Postal code"" field",55000,Placeholder is successfully moved and entered value is visible
+"5. Click on ""Countinue"" button",,"The user cannot continue order and error message appears ""Incorrect last name format. Only letters can be used for the last name."""
+,,
+ID,TC_38,
+Test case name,Verify that the user cannot order items with an invalid Zip/Postal code on the checkout page,
+Precondition,"The user already logged in,  added an item to the cart, and is located on the cart page.",
+Steps,Input,Expected result
+"1. Click on ""Checkout"" button",,The user is successfully redirected on checkout page
+"2. Input valid first name in ""First name"" field",Marko,Placeholder is successfully moved and entered value is visible
+"3. Input valid last name in ""Last name"" field",Markovi?,Placeholder is successfully moved and entered value is visible
+"4. Input invalid zip code in ""Zip/Postal code"" field",abvgd,Placeholder is successfully moved and entered value is visible
+"5. Click on ""Countinue"" button",,"The user cannot continue order and error message appears ""Incorrect zip code format. Only nubers can be used for the zip code."""
+,,
+ID,TC_39,
+Test case name,Verify that the user can cancel the order,
+Precondition,"The user already logged in,  added an item to the cart, and is located on the cart page.",
+Steps,Input,Expected result
+"1. Click on ""Checkout"" button",,The user is successfully redirected on checkout page
+"2. Input valid first name in ""First name"" field",Marko,Placeholder is successfully moved and entered value is visible
+"3. Input valid last name in ""Last name"" field",Markovi?,Placeholder is successfully moved and entered value is visible
+"4. Input valid Zip code in ""Zip/Postal code"" field",55000,Placeholder is successfully moved and entered value is visible
+"5. Click on ""Countinue"" button",,User is successfully redirected on checkout step two page
+"6. Click on ""Cancel"" button",,The user successfully canceled the order and was redirected to the products page. The product that he wanted to order is in the cart.
+,,
+ID,TC_40,
+Test case name,Verify that the certain user can order items.,
+Precondition,"The ""problem user"" already logged in,  added an item to the cart, and is located on the cart page.",
+Steps,Input,Expected result
+"1. Click on ""Checkout"" button",,The user is successfully redirected on checkout step one page
+"2. Input valid first name in ""First name"" field",Marko,Placeholder is successfully moved and entered value is visible
+"3. Input valid last name in ""Last name"" field",Markovi?,Placeholder is successfully moved and entered value is visible
+"4. Input valid Zip code in ""Zip/Postal code"" field",55000,Placeholder is successfully moved and entered value is visible
+"5. Click on ""Countinue"" button",,The user is successfully redirected on checkout step two page
+"6. Click on ""Finish"" button",,The user is successfully ordered items
+"7. Click on ""Back home"" button",,The user redirected on products page
+,,
+ID,TC_41,
+Test case name,Verify that the price is correct and corresponds to the ordered products,
+Precondition,"The user already logged in,  added an item to the cart, and is located on the cart page.",
+Steps,Input,Expected result
+"1. Click on ""Checkout"" button",,The user is successfully redirected on checkout step one page
+"2. Input valid first name in ""First name"" field",Marko,Placeholder is successfully moved and entered value is visible
+"3. Input valid last name in ""Last name"" field",Markovi?,Placeholder is successfully moved and entered value is visible
+"4. Input valid Zip code in ""Zip/Postal code"" field",55000,Placeholder is successfully moved and entered value is visible
+"5. Click on ""Countinue"" button",,"The user is successfully redirected on checkout step two page,  the total price is correct and corresponds to the ordered products."

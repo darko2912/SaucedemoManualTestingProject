@@ -1,0 +1,123 @@
+ID,TC_15,
+Test case name,Verify that user can logout.,
+Precondition,The user already logged in and is located on homepage page.,
+Steps,Input,Expected result
+1. Click on hamburger button,,Menu list appears.
+"2. Click on ""Logout"" button",,"User is successfully logout and redirected to ""Login"" page ""https://www.saucedemo.com/v1/""."
+,,
+ID,TC_16,
+Test case name,Verify that the user cannot log in with empty fields after logging out.,
+Precondition,The user already logged in and is located on homepage page.,
+Steps,Input,Expected result
+1. Click on hamburger button,,Menu list appears.
+"2. Click on ""Logout"" button",,"User is successfully logout and redirected to ""Login"" page ""https://www.saucedemo.com/v1/""."
+"3. Leave ""Username"" field empty",,Placeholder is visible.
+"4. Leave ""Password"" field empty",,Placeholder is visible.
+5. Click on login button,,"User couldn't login and error message appears ""Epic sadface: Username and password do not match any user in this service""."
+,,
+ID,TC_17,
+Test case name,Verify that the sort product dropdown list works.,
+Precondition,The user already logged in and is located on homepage page.,
+Steps,Input,Expected result
+1. Click on the sort product dropdown list,,Dropdown list is visible and offers the user a list of possible sorting options.
+"2. Select sort ""Name (A to Z)""",,Products are sorted by name from A to Z.
+"3. Select sort ""Name (Z to A)""",,Products are sorted by name from Z to A.
+"4. Select sort ""Price (Low to High)""",,Products are sorted by price from low to high.
+"5. Select sort ""Price (High to Low)""",,Products are sorted by price from high to low.
+,,
+ID,TC_18,
+Test case name,Verify that the user can add a product to the cart.,
+Precondition,The user already logged in and is located on homepage page.,
+Steps,Input,Expected result
+"1. Click on ""Add to cart"" button",,"The product is successfully added to cart, cart icon shows number of products which are in the cart."
+"2. Click on ""Cart"" icon",,The cart is not empty and there is a list of added products.
+,,
+ID,TC_19,
+Test case name,Verify that the user can add multiple products to the cart.,
+Precondition,The user already logged in and is located on homepage page.,
+Steps,Input,Expected result
+"1. Click on two or more ""Add to cart"" button",,"Products is successfully added to cart, cart icon shows number of products which are in the cart."
+"2. Click on ""Cart"" icon",,The cart is not empty and there is list of added products.
+,,
+ID,TC_20,
+Test case name,Verify that the user can add all product to the cart and remove all products from the cart.,
+Precondition,The user already logged in and is located on homepage page.,
+Steps,Input,Expected result
+"1. Click on ""Add to cart"" button for all products",,"All products are successfully added to the cart, the cart icon shows number of products which are in the cart."
+"2. Click on ""Cart"" icon",,The cart is not empty and there is a list of added products.
+"3. Click on ""Continue shoppin"" button",,The user is redirected back to the inventory page and all products are added.
+"4. Click on ""Remove"" button for all products",,"All products are successfully removed from the cart, the cart icon doesn't show any number of added products."
+,,
+ID,TC_21,
+Test case name,Verify that the user can visit linkedin profile of saucedemo.,
+Precondition,The user already logged in and is located on homepage page.,
+Steps,Input,Expected result
+1. Scroll down and click on linkedin icon,,Linkedin icon is clickable and user redirected on linkedin website.
+,,
+ID,TC_22,
+Test case name,Verify that user can visit facebook profile of saucedemo.,
+Precondition,The user already logged in and is located on homepage page.,
+Steps,Input,Expected result
+1. Scroll down and click on facebook icon,,Facebook icon is clickable and user redirected on facebbok website.
+,,
+ID,TC_23,
+Test case name,Verify that the user can visit twitter profile of saucedemo.,
+Precondition,The user already logged in and is located on homepage page.,
+Steps,Input,Expected result
+1. Scroll down and click on twitter icon,,Twitter icon is clickable and user is redirected on twitter website.
+,,
+ID,TC_24,
+Test case name,"Verify that the user can open, view and close the product details by name product and picture.",
+Precondition,The user already logged in and is located on homepage page.,
+Steps,Input,Expected result
+1. Click on product name,,Product details page is successfully opened.
+2. Click on back to products button,,User is redirected to products page.
+3. Click on product picture,,Product details page is successfully opened.
+,,
+ID,TC_25,
+Test case name,Verify that the user can add an item to the cart over the product details page.,
+Precondition,The user already logged in and is located on homepage page.,
+Steps,Input,Expected result
+1. Click on product name,,Product details page is successfully opened.
+2. Click on add to cart button,,The product is successfully added.
+,,
+ID,TC_26,
+Test case name,Verify that the user can remove a product from the cart.,
+Precondition,The user already logged in and is located on homepage page.,
+Steps,Input,Expected result
+"1. Click on ""Add to cart"" button",,"The product is successfully added to the cart, the cart icon shows number of products which are in the cart."
+"2. Click on ""Remove"" button",,"The product is successfully removed from the cart, the cart icon shows it is empty."
+"3. Click on ""Cart"" icon",,The cart is empty and there is not a list of added products.
+,,
+ID,TC_27,
+Test case name,Verify that the user can redirected to about page.,
+Precondition,The user already logged in and is located on homepage page.,
+Steps,Input,Expected result
+"1. Click on ""Hamburger"" button",,Menu list appears
+"2. Click on ""About"" button",,"The user is successfully redirected to the ""about"" page and the ""about"" page is opened in a new tab."
+,,
+ID,TC_28,
+Test case name,Verify that the sort product dropdown list works when certain user logged in,
+Precondition,"The ""problem user"" already logged in and is located on homepage page.",
+Steps,Input,Expected result
+1. Click on the sort product dropdown list,,Dropdown list is visible and offers the user a list of possible sorting options.
+"2. Select sort ""Name (A to Z)""",,Products are sorted by name from A to Z.
+"3. Select sort ""Name (Z to A)""",,Products are sorted by name from Z to A.
+"4. Select sort ""Price (Low to High)""",,Products are sorted by price from low to high.
+"5. Select sort ""Price (High to Low)""",,Products are sorted by price from high to low.
+,,
+ID,TC_29,
+Test case name,Verify that the certain user can redirected to about page.,
+Precondition,"The ""problem user"" already logged in and is located on homepage page.",
+Steps,Input,Expected result
+"1. Click on ""Hamburger"" button",,Menu list appears
+"2. Click on ""About"" button",,"The user is successfully redirected to the ""about"" page and the ""about"" page is opened in a new tab."
+,,
+ID,TC_30,
+Test case name,"Verify that ""Reset App State"" works",
+Precondition,The user already logged in and is located on homepage page.,
+Steps,Input,Expected result
+"1. Click on ""Add to cart"" button",,"The product is successfully added to cart, cart icon shows number of products which are in the cart."
+"2. Click on ""Cart"" icon",,The cart is not empty and there is a list of added products.
+"3. Click on ""Hamburger"" button",,Menu list appears
+"4. Click on ""Reset App State"" button",,"The page has refreshed and reverted to its initial settings, the cart is empty, and no products have been added."

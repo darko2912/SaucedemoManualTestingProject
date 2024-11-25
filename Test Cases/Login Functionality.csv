@@ -1,0 +1,130 @@
+ID,TC_01,
+Test case name,Verify that the user can login with valid credentials,
+Steps,Input,Expected result
+1. Open the browser,,Browser is successfully opened
+2. Go to url https://www.saucedemo.com/v1/index.html,,Sausedemo is successfully apears
+"3. Input valid username in ""Username"" field",standard_user,Placeholder is successfully moved and entered value is visible
+"4. Input valid password in ""Password"" field",secret_sauce,Placeholder is successfully moved and entered value is visible and hidden with bullet
+5. Click on login button,,"User is successfully login and redirected to ""products"" page (https://www.saucedemo.com/v1/inventory.html)
+Products are visible with their picture, name and price."
+,,
+ID,TC_02,
+Test case name,Verify that the user cannot login with invalid credentials,
+Steps,Input,Expected result
+1. Open the browser,,Browser is successfully opened
+2. Go to url https://www.saucedemo.com/v1/index.html,,Sausedemo is successfully apears
+"3. Input invalid username in ""Username"" field",Standard_User,Placeholder is successfully moved and entered value is visible
+"4. Input invalid password in ""Password"" field",secretsauce,Placeholder is successfully moved and entered value is visible and hidden with bullet
+5. Click on login button,,"User couldn't login and error message appears ""Epic sadface: Username and password do not match any user in this service"""
+,,
+ID,TC_03,
+Test case name,Verify that the user cannot login with empty username fields,
+Steps,Input,Expected result
+1. Open the browser,,Browser is successfully opened
+2. Go to url https://www.saucedemo.com/v1/index.html,,Sausedemo is successfully apears
+"3. Leave ""Username"" field empty",,Placeholder is visible
+"4. Leave ""Password"" field empty",secret_sauce,Placeholder is successfully moved and entered value is visible
+5. Click on login button,,"User couldn't login and error message appears ""Epic sadface: Username is required"""
+ID,TC_04,
+Test case name,Verify that the user cannot login with empty  passwordfields,
+Steps,Input,Expected result
+1. Open the browser,,Browser is successfully opened
+2. Go to url https://www.saucedemo.com/v1/index.html,,Sausedemo is successfully apears
+"3. Leave ""Username"" field empty",standard_user,Placeholder is successfully moved and entered value is visible
+"4. Leave ""Password"" field empty",,Placeholder is visible
+5. Click on login button,,"User couldn't login and error message appears ""Epic sadface: Username is required"""
+,,
+ID,TC_05,
+Test case name,Verify that the user cannot login with uppercase letter in username,
+Steps,Input,Expected result
+1. Open the browser,,Browser is successfully opened
+2. Go to url https://www.saucedemo.com/v1/index.html,,Sausedemo is successfully apears
+"3. Input uppearcase username in ""Username"" field",STANDARD_USER,Placeholder is successfully moved and entered value is visible
+"4. Input valid password in ""Password"" field",secret_sauce,Placeholder is successfully moved and entered value is visible and hidden with bullet
+5. Click on login button,,"User couldn't login and error message appears ""Epic sadface: Username and password do not match any user in this service"""
+,,
+ID,TC_06,
+Test case name,Verify that the user cannot login with uppercase letter in password,
+Steps,Input,Expected result
+1. Open the browser,,Browser is successfully opened
+2. Go to url https://www.saucedemo.com/v1/index.html,,Sausedemo is successfully apears
+"3. Input valid username in ""Username"" field",standard_user,Placeholder is successfully moved and entered value is visible
+"4. Input uppearcase password in ""Password"" field",SECRET_SAUCE,Placeholder is successfully moved and entered value is visible and hidden with bullet
+5. Click on login button,,"User couldn't login and error message appears ""Epic sadface: Username and password do not match any user in this service"""
+,,
+ID,TC_07,
+Test case name,Verify that the user cannot login with blank space before and after username,
+Steps,Input,Expected result
+1. Open the browser,,Browser is successfully opened
+2. Go to url https://www.saucedemo.com/v1/index.html,,Sausedemo is successfully apears
+"3. Input blank space after/before valid username  in ""Username"" field"," standard_user
+standard_user ",Placeholder is successfully moved and entered value is visible
+"4. Input blank space after/before valid password in ""Password"" field"," secret_sauce
+secret_sauce ",Placeholder is successfully moved and entered value is visible and hidden with bullet
+5. Click on login button,,"User couldn't login and error message appears ""Epic sadface: Username and password do not match any user in this service"""
+,,
+ID,TC_08,
+Test case name,Verify that the user cannot login with invalid password,
+Steps,Input,Expected result
+1. Open the browser,,Browser is successfully opened
+2. Go to url https://www.saucedemo.com/v1/index.html,,Sausedemo is successfully apears
+"3. Input valid username in ""Username"" field",standard_user,Placeholder is successfully moved and entered value is visible
+"4. Input invalid password in ""Password"" field",dar123456,Placeholder is successfully moved and entered value is visible and hidden with bullet
+5. Click on login button,,"User couldn't login and error message appears ""Epic sadface: Username and password do not match any user in this service"""
+,,
+ID,TC_09,
+Test case name,Verify that password visibility toggle successfully shows password,
+Steps,Input,Expected result
+1. Open the browser,,Browser is successfully opened
+2. Go to url https://www.saucedemo.com/v1/index.html,,Sausedemo is successfully apears
+"3. Input valid username in ""Username"" field",standard_user,Placeholder is successfully moved and entered value is visible
+"4. Input valid password in ""Password"" field",secret_sauce,Placeholder is successfully moved and entered value is visible and hidden with bullet
+"5. Click on password visibility toggle in ""Password"" field",,"Content of password is visible, the user can show and hide the password multiple times"
+,,
+ID,TC_10,
+Test case name,Verify that the user can recovery their forgotten password,
+Steps,Input,Expected result
+1. Open the browser,,Browser is successfully opened
+2. Go to url https://www.saucedemo.com/v1/index.html,,Sausedemo is successfully apears
+"3. Click on ""Forgot password"" link",,"""Forgot password"" link is visible, located below login button and it clickable. User is redirected on password recovery page"
+"4. Input valid email in ""Email"" field",user@gmail.com,Placeholder is successfully moved and entered value is visible
+"5. Click on ""Submit"" button",,The orgotten password request has been successfully sent and the user receives an email to recover their password
+,,
+ID,TC_11,
+Test case name,Verify that cartain user who is locked out cannot login with valid credentials,
+Steps,Input,Expected result
+1. Open the browser,,Browser is successfully opened
+2. Go to url https://www.saucedemo.com/v1/index.html,,Sausedemo is successfully apears
+"3. Input valid username in ""Username"" field",locked_out_user,Placeholder is successfully moved and entered value is visible
+"4. Input valid password in ""Password"" field",secret_sauce,Placeholder is successfully moved and entered value is visible and hidden with bullet
+5. Click on login button,,"User couldn't login and error message appears ""Epic sadface: Sorry, this user has been locked out."""
+,,
+ID,TC_12,
+Test case name,Verify that certain user can login with valid credentials,
+Steps,Input,Expected result
+1. Open the browser,,Browser is successfully opened
+2. Go to url https://www.saucedemo.com/v1/index.html,,Sausedemo is successfully apears
+"3. Input valid username in ""Username"" field",problem_user,Placeholder is successfully moved and entered value is visible
+"4. Input valid password in ""Password"" field",secret_sauce,Placeholder is successfully moved and entered value is visible and hidden with bullet
+5. Click on login button,,"User is successfully login and redirected to ""products"" page (https://www.saucedemo.com/v1/inventory.html)
+Products are visible with their picture, name and price."
+,,
+ID,TC_13,
+Test case name,Verify that certatin user can login with valid credentials,
+Steps,Input,Expected result
+1. Open the browser,,Browser is successfully opened
+2. Go to url https://www.saucedemo.com/v1/index.html,,Sausedemo is successfully apears
+"3. Input valid username in ""Username"" field",error_user,Placeholder is successfully moved and entered value is visible
+"4. Input valid password in ""Password"" field",secret_sauce,Placeholder is successfully moved and entered value is visible and hidden with bullet
+5. Click on login button,,"User is successfully login and redirected to ""products"" page (https://www.saucedemo.com/v1/inventory.html)
+Products are visible with their picture, name and price."
+,,
+ID,TC_14,
+Test case name,Verify that certain user can login with valid credentials,
+Steps,Input,Expected result
+1. Open the browser,,Browser is successfully opened
+2. Go to url https://www.saucedemo.com/v1/index.html,,Sausedemo is successfully apears
+"3. Input valid username in ""Username"" field",visual_user,Placeholder is successfully moved and entered value is visible
+"4. Input valid password in ""Password"" field",secret_sauce,Placeholder is successfully moved and entered value is visible and hidden with bullet
+5. Click on login button,,"User is successfully login and redirected to ""products"" page (https://www.saucedemo.com/v1/inventory.html)
+Products are visible with their picture, name and price."

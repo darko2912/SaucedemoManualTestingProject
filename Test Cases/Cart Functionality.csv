@@ -1,0 +1,48 @@
+ID,TC_31,
+Test case name,Verify that the user can continue shopping when it is located in the cart,
+Precondition,The user already logged in and is located on homepage page,
+Steps,Input,Expected result
+"1. Click on ""Add to cart"" button",,"The product is successfully added to the cart, cart icon shows number of products which are in the cart"
+"2. Click on ""Cart"" icon",,The cart is not empty and there is list of added products
+"3. Click on ""Countinue shopping"" button",,User is successfully redirected to product page
+"4. Click on ""Add to cart"" button",,"Product is successfully added to cart, cart icon shows number of products which are in the cart"
+"5. Click on ""Cart"" icon",,The cart is not empty and there is list of added products
+,,
+ID,TC_32,
+Test case name,Verify that the user can return to the products page,
+Precondition,"The user already logged in, and is located on the cart page.",
+Steps,Input,Expected result
+"1. Click on ""hamburger"" button",,Menu list appears
+"2. Click on ""All products"" button",,User successfully redirected on products page
+,,
+ID,TC_33,
+Test case name,Verify that the user can remove product from the cart,
+Precondition,The user already logged in and is located on homepage page,
+Steps,Input,Expected result
+"1. Click on ""Add to cart"" button",,"The product is successfully added to the cart, cart icon shows number of products which are in the cart"
+"2. Click on ""Cart"" icon",,The cart is not empty and there is list of added products
+"3. Click the ""Remove"" button located on the product",,User is successfully removed product from the cart and the cart is empty
+,,
+ID,TC_34,
+Test case name,Verify that the user can visit linkedin profile of saucedemo.,
+Precondition,The user already logged in and is located on cart page.,
+Steps,Input,Expected result
+1. Scroll down and click on linkedin icon,,Linkedin icon is clickable and user redirected on linkedin website.
+,,
+ID,TC_35,
+Test case name,Verify that the user can visit facebook profile of saucedemo.,
+Precondition,The user already logged in and is located on cart page.,
+Steps,Input,Expected result
+1. Scroll down and click on facebook icon,,Facebook icon is clickable and user redirected on facebbok website.
+,,
+ID,TC_36,
+Test case name,Verify that the user can visit twitter profile of saucedemo.,
+Precondition,The user already logged in and is located on cart page.,
+Steps,Input,Expected result
+1. Scroll down and click on twitter icon,,Twitter icon is clickable and user is redirected on twitter website.
+,,
+ID,TC_37,
+Test case name,Verify that the user cannot proceed the order with empty cart,
+Precondition,The user already logged in and is located on the cart page.,
+Steps,Input,Expected result
+"1. Click on ""Checkout"" button",,"The user cannot proceed order with empty cart and error message appears ""The cart is empty""."
