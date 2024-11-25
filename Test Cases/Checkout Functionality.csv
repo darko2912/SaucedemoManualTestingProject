@@ -67,7 +67,7 @@ Steps,Input,Expected result
 "1. Click on ""Checkout"" button",,The user is successfully redirected on checkout page
 "2. Input valid first name in ""First name"" field",Marko,Placeholder is successfully moved and entered value is visible
 "3. Input valid last name in ""Last name"" field",Markovic,Placeholder is successfully moved and entered value is visible
-"4. Input invalid zip code in ""Zip/Postal code"" field",#!fad",Placeholder is successfully moved and entered value is visible
+"4. Input invalid zip code in ""Zip/Postal code"" field",#!fad!&,Placeholder is successfully moved and entered value is visible
 "5. Click on ""Countinue"" button",,"The user cannot continue order and error message appears ""Incorrect zip code format. Only nubers can be used for the zip code."""
 ,,
 ID,TC_39,
