@@ -17,7 +17,7 @@ This project involves manual testing of the **SauceDemo** website, a platform de
 1. **Login Functionality:**
    - Valid and invalid credentials
    - Error messages for incorrect inputs
-2. **Product Page:**
+2. **Homepage Page:**
    - Sorting by name and price
    - Adding/removing items to/from the cart
 3. **Cart Functionality:**
