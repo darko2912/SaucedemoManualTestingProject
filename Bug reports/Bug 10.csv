@@ -1,0 +1,7 @@
+ID,B_10,,
+Summary,The sort products dropdown list doesn't work when certain user is logged in.,,
+Description,"When the ""problem user"" adds an item to the cart, clicks the ""checkout"" button to initiate the ordering process, and begins entering the required information, the characters entered in the ""last name"" field are not input into the last name field but are instead entered into the first name field, character by character. This is a functional bug.",,
+Steps to reproduce,Expected result,Actual result,Priority
+"1. Click on ""Checkout"" button",,,HIGH
+"2. Input valid first name in ""First name"" field",,,
+"3. Input valid last name in ""Last name"" field",Placeholder is successfully moved and entered value is visible.,The user cannor input last name.,

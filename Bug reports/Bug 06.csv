@@ -1,0 +1,7 @@
+ID,B_06,,
+Summary,The user can proceed order with empty cart,,
+Description,"When a user logs into the site and goes to the cart without adding any items, clicking the ""Checkout"" button allows them to proceed with the purchase without any items. The user should not be able to start the ordering process with an empty cart, as the order request is sent to the site owner, which could result in being flooded with invalid requests. This is a functional bug.",,
+Steps to reproduce,Expected result,Actual result,Priority
+1. The user already logged in and is located on homepage page,,,MEDIUM
+"2. Click on ""Cart"" icon",,,
+"3. Click on ""Checkout"" button","The user cannot proceed order with empty cart and error message appears ""The cart is empty"".",The user can proceed order with empty cart.,

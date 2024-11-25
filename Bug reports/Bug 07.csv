@@ -1,0 +1,6 @@
+ID,B_07,,
+Summary,"The ""about"" page is not open in the new tab.",,
+Description,"When the user clicks the about button, they should be redirected to the about page, which should open in a new tab. The user is successfully redirected to the about page, but the page opens in the same tab the user is currently on, which can be confusing as they are taken to a different site in the same tab. The issue lies in the code, where the attributes are missing the specification to open the link in a new tab. This is a functional bug.",,
+Steps to reproduce,Expected result,Actual result,Priority
+"1. Click on ""Hamburger"" button",,,LOW
+"2. Click on ""About"" button","The user is successfully redirected to the ""about"" page and the ""about"" page is opened in a new tab.","The user is successfully redirected to the ""about"" page, but the ""about"" page is not opened in a new tab.",

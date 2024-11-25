@@ -1,0 +1,7 @@
+ID,B_02,,
+Summary,Forgot password link does not exist,,
+Description,"When a user forgets their password, there should be a ""Forgot password"" link that redirects them to the password recovery page, allowing them to set a new password. The issue could be in the HTML code where the ""Forgot password"" element isn't implemented, or the function might not exist at all in either the backend or the frontend. This can be only visuale bug if ""Forgot password"" function exist.",,
+Steps to reproduce,Expected result,Actual result,Priority
+1. Open the browser,,,HIGH
+2. Go to url https://www.saucedemo.com/v1/index.html,,,
+3. Click on forgot password link,"""Forgot password"" link is visible, located below login button and it clickable. User is redirected on password recovery page","""Forgot password"" link is not visible",

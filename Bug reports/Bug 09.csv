@@ -1,0 +1,9 @@
+ID,B_09,,
+Summary,The sort products dropdown list doesn't work when certain user is logged in.,,
+Description,"When the ""problem user"" successfully logs in and is redirected to the products page, there is an option to sort by name and price. This option does not work when the user attempts to sort. When clicking on the dropdown menu for sorting, a list of sorting options appears, but none of the functions are clickable, and the user is unable to sort the products. This is a functional bug.",,
+Steps to reproduce,Expected result,Actual result,Priority
+1. Click on the sort product dropdown list,,,MEDIUM
+"2. Select sort ""Name (A to Z)""",Products are sorted by name from A to Z.,Products aren't sorted and sort option aren't clickable.,
+"3. Select sort ""Name (Z to A)""",Products are sorted by name from Z to A.,Products aren't sorted and sort option aren't clickable.,
+"4. Select sort ""Price (Low to High)""",Products are sorted by price from low to high.,Products aren't sorted and sort option aren't clickable.,
+"5. Select sort ""Price (High to Low)""",Products are sorted by price from high to low.,Products aren't sorted and sort option aren't clickable.,

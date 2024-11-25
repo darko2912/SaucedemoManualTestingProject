@@ -1,0 +1,8 @@
+ID,B_12,,
+Summary,"""Reset App State"" doesn't work.",,
+Description,"When the user logs in and adds a product to the cart, after clicking the ""Reset App State"" button, the page should refresh and revert to its initial settings before the product was added. The cart should be empty, and the previously added product should have an ""Add to Cart"" button instead of a ""Remove"" button. The page refreshes, and the cart is empty, but the previously added product still has a ""Remove"" button. After clicking on it, the product gets the ""Add to Cart"" button.",,
+Steps to reproduce,Expected result,Actual result,Priority
+"1. Click on ""Add to cart"" button",,,LOW
+"2. Click on ""Cart"" icon",,,
+"3. Click on ""Hamburger"" button",,,
+"4. Click on ""Reset App State"" button","The page has refreshed and reverted to its initial settings, the cart is empty, and no products have been added.","The cart is empty, but there is a ""Remove"" button on the products that were added before pressing the ""Reset App State"" button.",

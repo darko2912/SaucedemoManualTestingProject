@@ -1,0 +1,9 @@
+ID,B_03,,
+Summary,The user can order products with invalid first name,,
+Description,"When the user adds a product to the cart and clicks the checkout button to start the ordering process, they are redirected to a page where they enter their details: first name, last name, and postal code. To proceed with the ordering process, all fields must be filled in with valid data. However, the user is able to continue the ordering process even when the first name is filled in with invalid data. This is a functional bug.",,
+Steps to reproduce,Expected result,Actual result,Priority
+"1. Click on ""Checkout"" button",,,HIGH
+"2. Input invalid first name in ""First name"" field",,,
+"3. Input valid last name in ""Last name"" field",,,
+"4. Input valid Zip code in ""Zip/Postal code"" field",,,
+"5. Click on ""Countinue"" button","The user cannot continue order and error message appears ""Incorrect first name format. Only letters can be used for the first name.""",The user can continue order with an invalid first name.,

@@ -1,0 +1,10 @@
+ID,B_08,,
+Summary,The images on the homepage do not match the products when the certain user logs in.,,
+Description,"When the user logs in, they are redirected to the homepage, which displays products for purchase. All products on the homepage have the same image, which does not correspond to the product name. Each product should have an image that matches its name. This is a visual bug.",,
+Steps to reproduce,Expected result,Actual result,Priority
+1. Open the browser,,,MEDIUM
+2. Go to url https://www.saucedemo.com/v1/index.html,,,
+"3. Input valid username in ""Username"" field",problem_user,,
+"4. Input valid password in ""Password"" field",secret_sauce,,
+5. Click on login button,"User is successfully login and redirected to ""products"" page (https://www.saucedemo.com/v1/inventory.html)
+Products are visible with their picture, name and price.",Pictures for all products are same and does not correspond to the product name.,
